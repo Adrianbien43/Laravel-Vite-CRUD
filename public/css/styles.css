@@ -1,0 +1,43 @@
+/* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #0000ff, #87cefa) no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+.container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: red;
+}
+
+.row{
+
+    height: 50%;
+    width: 70%;
+}
+
+.col{
+
+    height: 100%;
+    width: 50%;
+}
+
+.card{
+
+    padding: 20px;
+    margin: 20px;
+}
+
+.card-boy{
+    height: 100%;
+    padding: 10px;
+    margin: 30px;
+} */
