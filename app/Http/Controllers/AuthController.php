@@ -23,13 +23,19 @@ class AuthController extends Controller
     public function registar(Request $request)
     {
 
-        $item = new User();
-        $item->name = $request->name;
-        $item->email = $request->email;
-        $item->password = Hash::make($request->password);
-        $item->save();
+        try{
+            $item = new User();
+            $item->name = $request->name;
+            $item->email = $request->email;
+            $item->password = Hash::make($request->password);
+            $item->save();
 
-        return to_route('login');
+            return to_route('login');
+
+        } catch(\Exception $e){
+            return redirect()->back()->withInput()
+                ->withErrors('Error al guardar el usuario.');
+        }
     }
 
     public function logear(Request $request)
@@ -52,7 +58,6 @@ class AuthController extends Controller
         Auth::logout();
         return to_route('login');
     }
-
 
 
     public function home()

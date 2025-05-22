@@ -4,29 +4,50 @@
 
 @section('contenido')
 
-    <div class="container">
+    <div class="containerCrud">
 
-        <h1>Listado de Stocks</h1>
-        <a href="{{ route('modules.stocks.create') }}">Crear nuevo stock</a>
+        <span>
+            <h1>Listado de Stocks</h1>
+        </span>
 
-        <ul>
-            @foreach ($stocks as $stock)
-                <li>
-                    {{ $stock->nombre }}
-                    {{ $stock->descripcion }}
+        <div class="containerInside">
+            <a href="{{ route('modules.stocks.create') }}" class="btn-create">
+                Crear nuevo stock
+            </a>
 
-                    <a href="{{ route('modules.stocks.edit', $stock->id) }}">Editar</a>
+            <table class="table-page">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>descripcion</th>
+                        <th>Imagenes</th>
+                        <th>Botones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach ($stocks as $stock)
+                        <tr>
+                            <td>{{ $stock->nombre }}</td>
+                            <td>{{ $stock->descripcion }}</td>
+                            <td></td>
+                            <td>
+                                <!-- Botón de Editar -->
+                                <a href="{{ route('modules.stocks.edit', $stock->id) }}" class="btn btn-edit">Editar</a>
 
-                    <form action="{{ route('modules.stocks.destroy', $stock->id) }}" method="POST"
-                        style="display:inline;">
-                        @csrf
-                        @method('DELETE')
-                        <button type="submit"
-                            onclick="return confirm('¿Estás seguro de eliminar el Stock?')">Eliminar</button>
-                    </form>
-                </li>
-            @endforeach
-        </ul>
+                                <!-- Formulario de Eliminar -->
+                                <form action="{{ route('modules.stocks.destroy', $stock->id) }}" method="POST"
+                                    style="display:inline;">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="btn btn-delete"
+                                        onclick="return confirm('¿Estás seguro de eliminar el Stock?')">Eliminar</button>
+                                </form>
+                            </td>
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
+        </div>
     </div>
 
 @endsection

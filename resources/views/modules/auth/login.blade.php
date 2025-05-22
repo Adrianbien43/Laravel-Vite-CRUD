@@ -9,7 +9,7 @@
             <div class="col">
                 <div class="card">
                     <div class="card-boy">
-                        <h2>Login de usuario con laravel 11</h2>
+                        <h2>Login de usuario con laravel 12</h2>
                         <form action="{{ route('logear') }}" method="post">
                             @csrf
                             @method('POST')

@@ -1,4 +1,4 @@
-/* {
+{
     box-sizing: border-box;
 }
 
@@ -9,7 +9,6 @@ body {
 }
 
 .container{
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,19 +18,16 @@ body {
 }
 
 .row{
-
     height: 50%;
     width: 70%;
 }
 
 .col{
-
     height: 100%;
     width: 50%;
 }
 
 .card{
-
     padding: 20px;
     margin: 20px;
 }
@@ -40,4 +36,4 @@ body {
     height: 100%;
     padding: 10px;
     margin: 30px;
-} */
+}
