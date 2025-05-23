@@ -24,10 +24,26 @@ header h1 {
     color: #fff;
 }
 
+
 footer {
     background-color: #001f3d;
     color: white;
     text-align: center;
     padding: 10px 0;
     width: 100%;
+    position: relative;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 0.7em;
+    color: #fff;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 25px;
+    background: #007bff;
 }

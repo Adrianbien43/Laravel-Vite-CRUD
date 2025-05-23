@@ -8,7 +8,7 @@
             <div class="col">
                 <div class="card">
                     <div class="card-body">
-                        <h2>Bienvenido a la tienda</h2>
+                        <h2>Agüita con la tienda <i class="bi bi-tsunami icon-grow"></i></h2>
                         <div>
                             <a href="{{ route('modules.productos.index') }}" class="btn">Productos</a>
                             <a href="{{ route('modules.categorias.index') }}" class="btn">Categorías</a>

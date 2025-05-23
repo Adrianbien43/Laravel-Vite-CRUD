@@ -11,6 +11,8 @@ export default defineConfig({
                 "resources/js/app.js",
                 "resources/css/auth.css",
                 "resources/css/crud.css",
+                "resources/css/create.css",
+                "resources/css/edit.css",
             ],
             refresh: true,
         }),

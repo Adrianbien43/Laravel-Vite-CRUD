@@ -1,0 +1,70 @@
+.Create-container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.Create-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.form-create-continer form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-create-continer label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+    color: #333;
+}
+
+.form-create-continer input,
+.form-create-continer textarea,
+.form-create-continer select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-create-continer input:focus,
+.form-create-continer textarea:focus,
+.form-create-continer select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.button-create {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-create:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .Create-container {
+        padding: 20px;
+    }
+
+    .form-create-continer form {
+        gap: 16px;
+    }
+}

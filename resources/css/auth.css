@@ -1,37 +1,55 @@
-.container{
+/* Contenedor principal */
+.container {
     height: 70vh;
     max-width: 90%;
     width: 100%;
-    margin-top: 30px;
+    margin: 30px auto;
     display: flex;
     padding: 20px 0;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgba(240, 240, 240, 0.3);
+    background-color: rgba(240, 240, 240, 0.4);
+    border-radius: 10px;
 }
 
+/* Tarjeta */
 .card {
     background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    padding: 40px;
     text-align: center;
+    width: 100%;
+    max-width: 600px;
 }
 
-.card-boy h2 {
-    font-size: 30px;
-    margin-bottom: 50px;
-    color: #222;
+/* Título */
+.card-body h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
 }
 
+/* Header si se usa */
+.card-header {
+    height: 50px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    background: white;
+    font-weight: bold;
+}
+
+/* Inputs */
 .form-control {
     width: 100%;
-    padding: 10px;
+    padding: 12px 15px;
     margin: 10px 0;
-    border-radius: 5px;
+    border-radius: 8px;
     border: 1px solid #ccc;
-    font-size: 20px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
 }
 
 .form-control:focus {
@@ -39,32 +57,57 @@
     outline: none;
 }
 
+/* Botones generales */
 .btn {
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 12px 20px;
+    border-radius: 8px;
     font-size: 16px;
-    width: 100%;
     cursor: pointer;
+    width: auto;
+    min-width: 90px;
+    margin: 8px;
+    transition: background-color 0.3s ease, transform 0.2s;
 }
 
+/* Estilos de botón */
 .btn-primary {
     background-color: #007bff;
     border: none;
     color: white;
-    margin-top: 10px;
 }
 
 .btn-info {
     background-color: #17a2b8;
     border: none;
     color: white;
-    margin-top: 10px;
 }
 
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+/* Hover effects */
 .btn:hover {
-    opacity: 0.9;
+    opacity: 0.95;
+    transform: scale(1.02);
 }
 
-.btn + .btn {
-    margin-top: 20px;
+/* Icono con animación */
+.icon-grow {
+    font-size: 1.4rem;
+    margin-left: 10px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
 }

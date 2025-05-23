@@ -1,0 +1,96 @@
+/* Contenedor principal centrado */
+.container-edit {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Contenedor del form */
+.from-container-edit {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Título */
+.from-container-edit h1 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* Estilos para los labels */
+.from-container-edit label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #555;
+}
+
+/* Inputs, textarea y selects */
+.from-container-edit input[type="text"],
+.from-container-edit input[type="number"],
+.from-container-edit textarea,
+.from-container-edit select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1.8px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+    resize: vertical; /* textarea */
+}
+
+/* Cambia el borde al foco */
+.from-container-edit input[type="text"]:focus,
+.from-container-edit input[type="number"]:focus,
+.from-container-edit textarea:focus,
+.from-container-edit select:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+/* Select múltiple altura */
+.from-container-edit select[multiple] {
+    min-height: 120px;
+}
+
+/* Botón */
+.edit-button {
+    background-color: #4a90e2;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    align-self: center;
+    width: 100%;
+    max-width: 250px;
+    margin-top: 10px;
+}
+
+.edit-button:hover {
+    background-color: #357abd;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .container-edit {
+        margin: 20px 15px;
+        padding: 15px;
+    }
+
+    .edit-button {
+        max-width: 100%;
+    }
+}

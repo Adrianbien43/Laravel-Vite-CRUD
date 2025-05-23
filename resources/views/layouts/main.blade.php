@@ -10,14 +10,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    {{-- Bootstrap 5 icons CSS --}}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
+    <!-- Vite para CSS y JS -->
     @vite([
         'resources/css/app.css',
         'resources/css/styles.css',
         'resources/js/app.js',
         'resources/css/auth.css',
-        'resources/css/crud.css'
-    ]) <!-- Vite para CSS y JS -->
+        'resources/css/crud.css',
+        'resources/css/create.css',
+        'resources/css/edit.css'
+    ])
 
     <title>@yield('titulo_pagina')</title>
 </head>
@@ -36,7 +41,7 @@
 
     <footer>
         <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+        <div class="wave"></div>
     </footer>
 </body>
-
 </html>
