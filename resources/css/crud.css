@@ -8,21 +8,46 @@
 }
 
 .containerCrud span {
-    display: inline-flex;
+    display: flex; /* mejor flex que inline-flex para controlar espacios */
     align-items: center;
-    justify-content: center;
+    justify-content: space-between; /* separa h1 y botón */
     background-color: #f0f0f0;
     margin-top: 20px;
     color: #333;
     width: 90%;
     height: 70px;
-    text-align: center;
+    padding: 0 20px; /* un poco de espacio horizontal */
+    box-sizing: border-box;
 }
 
 .containerCrud span h1 {
     font-size: 40px;
     margin: 0;
     color: #222;
+}
+
+.btn-exit {
+    display: inline-flex;
+    align-items: center;
+    background-color: #f7c948; /* amarillo */
+    color: #222;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+}
+
+.btn-exit i {
+    margin-left: 8px; /* espacio entre texto e ícono */
+    font-size: 20px;
+}
+
+.btn-exit:hover {
+    background-color: #d4aa1f; /* amarillo más oscuro en hover */
+    color: #fff;
 }
 
 .containerInside {
@@ -115,4 +140,25 @@
 
 .btn-delete:hover {
     background-color: #c0392b;
+}
+
+
+.pagination .page-link {
+    height: 50px;
+    margin: 0 10px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.pagination .page-link:hover {
+    height: 50px;
+    background-color: #f0f0f0;
+}
+
+.pagination .active .page-link {
+    height: 50px;
+    margin: 0px 10px 10px 0px;
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
 }

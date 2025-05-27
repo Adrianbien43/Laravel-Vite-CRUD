@@ -5,6 +5,7 @@
 @section('contenido')
     <div class="container-edit">
         <div class="from-container-edit">
+
             <span>
                 <h1>Editar un Almacén</h1>
             </span>
@@ -36,6 +37,7 @@
 
                 <button class="edit-button" type="submit">Actualizar Almacén</button>
             </form>
+            
         </div>
     </div>
 @endsection

@@ -1,4 +1,3 @@
-/* Contenedor principal */
 .container {
     height: 70vh;
     max-width: 90%;
@@ -13,7 +12,7 @@
     border-radius: 10px;
 }
 
-/* Tarjeta */
+
 .card {
     background-color: #fff;
     border-radius: 15px;
@@ -24,7 +23,6 @@
     max-width: 600px;
 }
 
-/* Título */
 .card-body h2 {
     font-size: 28px;
     font-weight: bold;
@@ -32,7 +30,6 @@
     margin-bottom: 30px;
 }
 
-/* Header si se usa */
 .card-header {
     height: 50px;
     font-size: 24px;
@@ -41,7 +38,6 @@
     font-weight: bold;
 }
 
-/* Inputs */
 .form-control {
     width: 100%;
     padding: 12px 15px;
@@ -57,7 +53,6 @@
     outline: none;
 }
 
-/* Botones generales */
 .btn {
     padding: 12px 20px;
     border-radius: 8px;
@@ -69,7 +64,29 @@
     transition: background-color 0.3s ease, transform 0.2s;
 }
 
-/* Estilos de botón */
+.btn-page {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #a0e9ff, #70d6ff, #ffffff);
+    background-size: 200% 200%;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn-page:hover {
+    background-position: right center;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+
 .btn-primary {
     background-color: #007bff;
     border: none;
@@ -88,13 +105,12 @@
     border: none;
 }
 
-/* Hover effects */
 .btn:hover {
     opacity: 0.95;
     transform: scale(1.02);
 }
 
-/* Icono con animación */
+
 .icon-grow {
     font-size: 1.4rem;
     margin-left: 10px;

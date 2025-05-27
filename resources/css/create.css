@@ -59,6 +59,8 @@
     background-color: #0056b3;
 }
 
+
+
 @media (max-width: 768px) {
     .Create-container {
         padding: 20px;
@@ -68,3 +70,4 @@
         gap: 16px;
     }
 }
+

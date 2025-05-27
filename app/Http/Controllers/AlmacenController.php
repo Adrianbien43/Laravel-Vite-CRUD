@@ -12,7 +12,7 @@ class AlmacenController extends Controller
 {
     public function index()
     {
-        $almacenes = Almacen::all();
+        $almacenes = Almacen::paginate(10);
         return view('modules.almacenes.index', compact('almacenes'));
     }
 
