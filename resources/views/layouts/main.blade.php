@@ -20,6 +20,7 @@
     'resources/css/app.css',
     'resources/css/styles.css',
     'resources/js/app.js',
+    'resources/js/register-validation.js',
     'resources/css/auth.css',
     'resources/css/crud.css',
     'resources/css/create.css',

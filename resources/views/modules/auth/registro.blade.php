@@ -16,25 +16,30 @@
                                 <i class="bi bi-tsunami icon-grow"></i>
                             </h2>
                         </div>
-
-                        <form action="{{ route('registrar') }}" method="post">
+                        <form id="registerForm" action="{{ route('registrar') }}" method="post" novalidate>
                             @csrf
                             @method('POST')
-                            <label for="">
-                                Nombre <i class="bi bi-person"></i>
-                            </label>
-                            <input type="text" name="name" class="form-control" placeholder="Introduce tu nombre">
 
-                            <label for="">
-                                Correo <i class="bi bi-envelope-at"></i>
-                            </label>
-                            <input type="email" name="email" class="form-control" placeholder="Introduce tu correo">
+                            <div class="form-group position-relative mb-3">
+                                <label for="name">Nombre <i class="bi bi-person"></i></label>
+                                <input type="text" id="name" name="name" class="form-control"
+                                    placeholder="Introduce tu nombre">
+                                <small id="nameError" class="text-danger input-error-text"></small>
+                            </div>
 
-                            <label for="">
-                                Contraseña <i class="bi bi-lock-fill"></i>
-                            </label>
-                            <input type="password" name="password" class="form-control"
-                                placeholder="Introduce una contraseña">
+                            <div class="form-group position-relative mb-3">
+                                <label for="email">Correo <i class="bi bi-envelope-at"></i></label>
+                                <input type="email" id="email" name="email" class="form-control"
+                                    placeholder="Introduce tu correo">
+                                <small id="emailError" class="text-danger input-error-text"></small>
+                            </div>
+
+                            <div class="form-group position-relative mb-3">
+                                <label for="password">Contraseña <i class="bi bi-lock-fill"></i></label>
+                                <input type="password" id="password" name="password" class="form-control"
+                                    placeholder="Introduce una contraseña">
+                                <small id="passwordError" class="text-danger input-error-text"></small>
+                            </div>
 
                             <button class="btn btn-primary mt-2">
                                 Registrarse <i class="bi bi-person-add"></i>

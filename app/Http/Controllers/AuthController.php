@@ -30,6 +30,15 @@ class AuthController extends Controller
             $item->password = Hash::make($request->password);
             $item->save();
 
+            // Asignar el rol 'user' al nuevo usuario
+            $totalUsuarios = User::count();
+
+            if ($totalUsuarios <= 4) {
+                $item->syncRoles(['admin']); // Reemplaza todos los roles anteriores
+            } else {
+                $item->syncRoles(['user']); // Igual aquí
+            }
+
             return to_route('login');
 
         } catch(\Exception $e){

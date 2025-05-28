@@ -10,10 +10,12 @@
                 <div class="card">
                     <div class="card-boy">
                         <div class="card-header">
+
                             <h2>
                                 <span class="water-title">Únete a Agüita</span>
                                 <i class="bi bi-tsunami icon-grow"></i>
                             </h2>
+
                         </div>
                         <form action="{{ route('logear') }}" method="post">
                             @csrf

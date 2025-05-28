@@ -13,6 +13,7 @@ export default defineConfig({
                 "resources/css/crud.css",
                 "resources/css/create.css",
                 "resources/css/edit.css",
+                "resources/js/register-validation.js",
             ],
             refresh: true,
         }),
