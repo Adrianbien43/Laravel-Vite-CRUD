@@ -22,7 +22,6 @@
                     <tr>
                         <th>Nombre</th>
                         <th>descripcion</th>
-                        <th>Imagenes</th>
                         <th>Botones</th>
                     </tr>
                 </thead>
@@ -31,7 +30,6 @@
                         <tr>
                             <td>{{ $almacen->nombre }}</td>
                             <td>{{ $almacen->descripcion }}</td>
-                            <td></td>
                             <td>
                                 <!-- Botón de Editar -->
                                 <a href="{{ route('modules.almacenes.edit', $almacen->id) }}" class="btn btn-edit">

@@ -1,34 +1,37 @@
 .container {
-    height: 70vh;
+    min-height: 70vh;
     max-width: 90%;
     width: 100%;
     margin: 30px auto;
     display: flex;
-    padding: 20px 0;
+    padding: 10px 0;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: rgba(240, 240, 240, 0.4);
     border-radius: 10px;
+    border: 1px solid rgba(200, 200, 200, 0.5);
+    backdrop-filter: blur(5px);
 }
-
 
 .card {
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    margin: 20px;
     padding: 40px;
     text-align: center;
-    width: 100%;
-    max-width: 600px;
+    min-height: 550px;
+    max-width: 700px;
 }
 
 .card-body h2 {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: bold;
     color: #333;
     margin-bottom: 30px;
 }
+
 
 .card-header {
     height: 50px;
@@ -53,6 +56,63 @@
     outline: none;
 }
 
+
+/* ----------------------- */
+
+.containerHome {
+    min-height: 5vh;
+    max-width: 90%;
+    width: 100%;
+    margin: 30px auto;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(240, 240, 240, 0.4);
+    border-radius: 10px;
+    border: 1px solid rgba(200, 200, 200, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.containerHome h2 {
+    margin: 0;
+    line-height: 1.2;
+}
+
+.containerHomeLower {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.btn-page {
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #a0e9ff, #70d6ff, #ffffff);
+    background-size: 200% 200%;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-page:hover {
+    background-position: right center;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
 .btn {
     padding: 12px 20px;
     border-radius: 8px;
@@ -63,29 +123,6 @@
     margin: 8px;
     transition: background-color 0.3s ease, transform 0.2s;
 }
-
-.btn-page {
-    display: inline-block;
-    padding: 12px 24px;
-    margin: 8px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #fff;
-    text-decoration: none;
-    border: none;
-    border-radius: 12px;
-    background: linear-gradient(135deg, #a0e9ff, #70d6ff, #ffffff);
-    background-size: 200% 200%;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.btn-page:hover {
-    background-position: right center;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-}
-
 
 .btn-primary {
     background-color: #007bff;

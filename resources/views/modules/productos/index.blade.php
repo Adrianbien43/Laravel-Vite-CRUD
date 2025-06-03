@@ -6,15 +6,15 @@
 
     <div class="containerCrud">
         <span>
-            <h1>Listado de Productos</h1>
+            <h1>Lista: Productos</h1>
             <a href="{{ route('home') }}" class="btn-exit">
-                Salir Productos <i class="bi bi-box-arrow-right"></i>
+                Salir <i class="bi bi-box-arrow-right"></i>
             </a>
         </span>
 
         <div class="containerInside">
             <a href="{{ route('modules.productos.create') }}" class="btn-create">
-                Crear nuevo producto <i class="bi bi-file-plus"></i>
+                Nuevo producto <i class="bi bi-file-plus"></i>
             </a>
 
             <table class="table-page">
@@ -22,7 +22,6 @@
                     <tr>
                         <th>Nombre</th>
                         <th>Observaciones</th>
-                        <th>Imagenes</th>
                         <th>Precio</th>
                         <th>Botones</th>
                     </tr>
@@ -32,7 +31,6 @@
                         <tr>
                             <td>{{ $producto->nombre }}</td>
                             <td>{{ $producto->observaciones }}</td>
-                            <td></td>
                             <td>${{ number_format($producto->precio, 2) }}</td>
                             <td>
                                 <!-- Botón de Editar -->

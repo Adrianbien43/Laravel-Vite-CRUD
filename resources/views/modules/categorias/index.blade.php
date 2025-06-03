@@ -7,22 +7,21 @@
     <div class="containerCrud">
 
         <span>
-            <h1>Listado de Categorias</h1>
+            <h1>Lista: Categorias</h1>
             <a href="{{ route('home') }}" class="btn-exit">
-                Salir Categorias <i class="bi bi-box-arrow-right"></i>
+                Salir <i class="bi bi-box-arrow-right"></i>
             </a>
         </span>
         <div class="containerInside">
             <a href="{{ route('modules.categorias.create') }}" class="btn-create">
-                Crea una nueva Categoria <i class="bi bi-file-plus"></i>
+                Nueva Categoria <i class="bi bi-file-plus"></i>
             </a>
 
             <table class="table-page">
                 <thead>
                     <tr>
                         <th>Nombre</th>
-                        <th>descripcion</th>
-                        <th>Imagenes</th>
+                        <th>Descripcion</th>
                         <th>Botones</th>
                     </tr>
                 </thead>
@@ -31,8 +30,8 @@
                         <tr>
                             <td>{{ $categoria->nombre }}</td>
                             <td>{{ $categoria->descripcion }}</td>
-                            <td></td>
                             <td>
+
                                 <!-- Botón de Editar -->
                                 <a href="{{ route('modules.categorias.edit', $categoria->id) }}" class="btn btn-edit">
                                     Editar <i class="bi bi-pencil-square"></i>

@@ -83,16 +83,15 @@
 }
 
 
-
 .table-page {
     width: 100%;
-    border-collapse: collapse;
+    table-layout: fixed;
 }
 
 .table-page th,
 .table-page td {
     padding: 12px 15px;
-    text-align: left;
+    text-align: center;
     border-bottom: 1px solid #2c3e50;
 }
 
@@ -102,16 +101,6 @@
     font-weight: 600;
 }
 
-.table-page td.imagen-col {
-    width: 120px;
-}
-
-.table-page td.imagen-col img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 4px;
-}
 
 .btn-edit,
 .btn-delete {
@@ -162,3 +151,4 @@
     border-color: #007bff;
     color: #fff;
 }
+
